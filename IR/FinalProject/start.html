@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Media Hackerz</title>
+    <link rel="stylesheet" href="css/reuters.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/smoothness/jquery-ui.css">
+    <script src="js/reuters.2.js"></script>
+    <script src="../../core/Core.js"></script>
+    <script src="../../core/AbstractManager.js"></script>
+    <script src="../../managers/Manager.jquery.js"></script>
+    <script src="../../core/Parameter.js"></script>
+    <script src="../../core/ParameterStore.js"></script>
+    <script src="../../core/AbstractWidget.js"></script>
+    <script src="widgets/ResultWidget.2.0.js"></script>
+    <script src="../../core/AbstractWidget.js"></script>
+    <script src="widgets/PagerWidget.js"></script>
+    <script src="widgets/AbstractFacetWidget.js"></script>
+    <script src="widgets/TagcloudWidget.js"></script>
+    <script src="widgets/CurrentSearchWidget.js"></script>
+    <script src="../../core/AbstractTextWidget.js"></script>
+    <script src="widgets/TextWidget.js"></script>
+
+
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <h1 align="center"><font color="#A9F5F2">Tweet Surf Engine</font></h1>
+        <h2 align="center"><font color= #d3d3d3>Browse through a wide Ocean of Tweets</font></h2>
+    </div>
+
+    <div class="right">
+        <div id="result">
+            <div id="navigation">
+                <ul id="pager"></ul>
+                <div id="pager-header"></div>
+            </div>
+            <div id="docs"></div>
+        </div>
+    </div>
+
+    <div class="left">
+        <h2>Current Selection</h2>
+        <ul id="selection"></ul>
+
+        <br>
+        <h3>Search</h3>
+        <ul id="search">
+        <input type="text" id="query" name="query" autocomplete="off"><br><br>
+        
+        </ul>
+        <div id="left1">
+            <div id="tagcloud1">
+                <h2>Top Lang</h2>
+                <div class="tagcloud" id="tweet_lang"></div>
+            </div>
+            <div id="tagcloud2">
+                <h2>Top HashTags</h2>
+                <div class="tagcloud" id="tweet_hashtags"></div>
+            </div>
+            <div id="tagcloud3">
+                <h2>Tweet Locations</h2>
+                <div class="tagcloud" id="location"></div>
+            </div>
+            <div id="tagcloud4">
+                <h2>Place in Tweet</h2>
+                <div class="tagcloud" id="place"></div>
+            </div>
+        </div>
+        <div id="right1">
+            <div id="tagcloud5">
+                <h2>Person</h2>
+                <div class="tagcloud" id="person"></div>
+            </div>
+            <div id="tagcloud6">
+                <h2>Twitter Handle</h2>
+                <div class="tagcloud" id="twitter_handle"></div>
+            </div>
+            <!--
+                  <h2>By Country</h2>
+                  <div id="countries"></div>
+                  <div id="preview"></div>
+
+                  <h2>By Date</h2>
+                  <div id="calendar"></div>
+
+                  <div class="clear"></div>
+                -->
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+    <div class="copyright" id="footer">
+        <br>
+        <hr>
+        &copy;Team Mediahackerz|Computer Science Department|The State University of New York at Buffalo|2015
+
+    </div>
+</body>
+</html>
+
